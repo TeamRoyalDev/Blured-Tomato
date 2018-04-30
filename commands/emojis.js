@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     
     if(user.hasPermission("MANAGE_GUILD")) {
     	if(args[0] && args[1]) {
-      	guild.createEmoji(args[0], args[1]);
+      	server.createEmoji(args[0], args[1]);
         channel.send(`An emoji has been created by ${user.username} with the name: ${args[1]}.`);
       } else channel.send(`Insufficient arguments.\n\nUsage: b!emojis <url> <name>`);
     } else channel.send("Insufficient permissions.");
