@@ -41,10 +41,10 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
-  let mcmCmd = ${prefix} + "mcm";
-  let setupsCmd = ${prefix} + "setups";
-  let memesCmd = ${prefix} + "memes";
-  let emojisCmd = ${prefix} + "emojis";
+  let mcmCmd = prefix + "mcm";
+  let setupsCmd = prefix + "setups";
+  let memesCmd = prefix + "memes";
+  let emojisCmd = prefix + "emojis";
 
 if(cmd === mcmCmd | cmd === setupsCmd | cmd === memesCmd | cmd === emojisCmd) {
   	let cmdFile = bot.commands.get(cmd.slice(prefix.length));
