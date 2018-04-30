@@ -45,7 +45,6 @@ bot.on("message", async message => {
 
 	if(cmds.indexOf(cmd)) {
   	let cmdFile = bot.commands.get(cmd.slice(prefix.length));
-	console.log(cmdFile);
         cmdFile.run(bot, message, args);
   }
 
