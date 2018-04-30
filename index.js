@@ -43,7 +43,7 @@ bot.on("message", async message => {
   
   var cmds = [`${prefix}mcm`, `${prefix}play`, `${prefix}skip`, `${prefix}pause`, `${prefix}resume`, `${prefix}setups`, `${prefix}prefix`, `${prefix}memes`, `${prefix}emojis`];
 
-	if(cmds.contains(cmd)) {
+	if(cmds.indexOf(cmd)) {
   	let cmdFile = bot.commands.get(cmd.slice(prefix.length));
     cmdFile.run(bot, message, args);
   }
