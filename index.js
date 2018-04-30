@@ -41,7 +41,7 @@ bot.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
   
-  var cmds = [`${prefix}mcm`, `${prefix}play`, `${prefix}skip`, `${prefix}pause`, `${prefix}resume`, `${prefix}setups`, `${prefix}prefix`, `${prefix}memes`, `${prefix}emojis`];
+  var cmds = [`${prefix}mcm`,/*`${prefix}play`, `${prefix}skip`, `${prefix}pause`, `${prefix}resume`,*/ `${prefix}setups`,/*`${prefix}prefix`,*/ `${prefix}memes`, `${prefix}emojis`];
 
 	if(cmds.indexOf(cmd)) {
   	let cmdFile = bot.commands.get(cmd.slice(prefix.length));
