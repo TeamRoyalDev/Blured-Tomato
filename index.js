@@ -17,7 +17,7 @@ fs.readdir("./commands/", (err, files) =>{
 
   jsfile.forEach((f, i) =>{
     let props = require(`./commands/${f}`);
-    console.log(`${f} all the configs has been loaded successfully!`);
+    console.log(`${f} has been loaded successfully!`);
     bot.commands.set(props.help.name, props);
 
   });
@@ -26,7 +26,7 @@ fs.readdir("./commands/", (err, files) =>{
 
 
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} has successfully started made by Chelsea & Death.`);
+  console.log(`${bot.user.username} has successfully started. Made By Chelsea & Death.`);
   bot.user.setActivity("Blured | b!Help", {type: "PLAYING"});
 
 
