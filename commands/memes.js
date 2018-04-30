@@ -1,5 +1,6 @@
 const fs = require("fs");
 const memesDir = "./memes";
+const Discord = require("discord.js");
 
 var length = 0;
 
