@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
    ({embed: {
   color: 3447003,
   description: "t1"
-  setImage({ files: [`./memes/${r}.jpg`]})
+  .setImage({ files: [`./memes/${r}.jpg`]});
 }});
 } 
 
