@@ -17,8 +17,8 @@ module.exports.run = async (bot, message, args) => {
    ({embed: {
   color: 3447003,
   description: "t1"
+  .addField("", { files: [`./memes/${r}.jpg`]});
 }});
-   channel.send("", { files: [`./memes/${r}.jpg`]});
 } 
 
 module.exports.help = {
