@@ -13,7 +13,7 @@ let channel = message.channel;
 var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
 .setDescription("test1")
-.attachFile(`${r}.jpg`)
+.attachFile(`./memes/${r}.jpg`)
 
 channel.send(embedMsg);
 
