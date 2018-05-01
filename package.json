@@ -1,14 +1,16 @@
+
 {
-  "name": "Blured-Tomato",
+  "name": "Blured Tomato",
   "version": "1.0.0",
-  "description": "MCM Service.",
+  "description": "MCM project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Death and Chelsea",
+  "author": "Death & Chelsea",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.3.2",
+    "ms": "^2.1.1"
   }
 }
