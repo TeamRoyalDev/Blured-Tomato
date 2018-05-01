@@ -1,5 +1,6 @@
 {
   "name": "Blured-Tomato",
+  "prefix": "b!",
   "version": "1.0.0",
   "description": "MCM Service.",
   "main": "index.js",
