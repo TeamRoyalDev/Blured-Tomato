@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   .addField("**2** _-_ https://discord.gg/c3jvXwu")
   .addField("**3** _-_ https://discord.gg/NxRCTm9")
   .addField("**4** _-_ https://discord.gg/S9ZzYCg")
-  .addField("**5** _-_ https://discord.gg/BqsBssc")
+  .addField("**5** _-_ https://discord.gg/BqsBssc");
    
   let user = message.author;
 
