@@ -13,13 +13,11 @@ module.exports.run = async (bot, message, args) => {
 
 	 var r = Math.floor(Math.random() * length);
    
-   channel.send
-   ({embed: {
-  color: 3447003,
-  description: "t1"
-}});
-} 
-channel.send({ files: [`./memes/${r}.jpg`]})
+let embedMsg = new Discord.RichEmbed()
+.setDescription("test1")
+.setImage("./memes/${r}.jpg");
+
+channel.send(embedMsg);
 
 module.exports.help = {
     name: "memes"
