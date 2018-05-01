@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let user = message.author;
     
    let setupEmbed = new Discord.RichEmbed()
   .setAuthor(":computer: Setups")
