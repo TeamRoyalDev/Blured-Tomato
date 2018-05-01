@@ -21,4 +21,4 @@ channel.send(embedMsg);
 
 module.exports.help = {
     name: "memes"
-})
+});
