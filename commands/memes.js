@@ -15,10 +15,10 @@ module.exports.run = async (bot, message, args) => {
    
 let embedMsg = new Discord.RichEmbed()
 .setDescription("test1")
-.setImage("./memes/${r}.jpg");
+.setImage(`{r}.jpg`)
 
 channel.send(embedMsg);
 
 module.exports.help = {
     name: "memes"
-});
+}
