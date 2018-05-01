@@ -13,6 +13,11 @@ module.exports.run = async (bot, message, args) => {
 
 	 var r = Math.floor(Math.random() * length);
    
+   channel.send
+   ({embed: {
+  color: 3447003,
+  description: "t1"
+}});
    channel.send("", { files: [`./memes/${r}.jpg`]});
 } 
 
