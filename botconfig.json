@@ -1,3 +1,15 @@
 {
-  "prefix": "b!"
+  "name": "Blured-Tomato",
+  "version": "1.0.0",
+  "description": "MCM Service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo "Error: no test specified" && exit 1"
+  },
+  "author": "Death and Chelsea",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "youtube-dl": "^1.12.2"
+  }
 }
