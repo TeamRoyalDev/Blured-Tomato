@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
    
 let embedMsg = new Discord.RichEmbed()
 .setDescription("test1")
-.setImage("./memes/${r}.jpg");
+.setImage("./memes/${r}.jpg")
 
 channel.send(embedMsg);
 
