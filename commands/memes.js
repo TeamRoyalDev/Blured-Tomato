@@ -9,15 +9,17 @@ fs.readdir(memesDir, (err, files) => {
 });
 
 module.exports.run = async (bot, message, args) => {
-	 let channel = message.channel;
-
-	 var r = Math.floor(Math.random() * length);
-   
+let channel = message.channel;
+var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
 .setDescription("test1")
 .setImage(`{r}.jpg`)
 
 channel.send(embedMsg);
+
+}
+
+
 
 module.exports.help = {
     name: "memes"
