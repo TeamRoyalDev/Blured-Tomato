@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 let channel = message.channel;
 var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
-.setAuthor("test1")
+.setAuthor("test2")
 .setImage(imgur.com/`${code}`);
 
 channel.send(embedMsg);
