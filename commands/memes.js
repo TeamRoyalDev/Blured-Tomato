@@ -9,7 +9,7 @@ fs.readdir(memesDir, (err, files) => {
 });
 
 
-var codes = ["aSDA1d", "aSDia12", "etc."];
+var codes = ["4SF7teV", "4SF7teV", "4SF7teV"];
 var r = Math.floor(Math.random() * (codes.length));
 let pic = codes[r];
 
