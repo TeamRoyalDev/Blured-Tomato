@@ -8,14 +8,19 @@ fs.readdir(memesDir, (err, files) => {
 	length = files.length;
 });
 
+
+var codes = ["aSDA1d", "aSDia12", "etc."];
+var r = Math.floor(Math.random() * (max));
+let pic = codes[r];
+
 module.exports.run = async (bot, message, args) => {
 let channel = message.channel;
 var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
 .setAuthor("test1")
+.setImage(imgur.com/`${code}`);
 
 channel.send(embedMsg);
-channel.send({file: `./memes/${r}.jpg`});
 
 }
 
