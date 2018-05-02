@@ -10,15 +10,15 @@ fs.readdir(memesDir, (err, files) => {
 
 
 var codes = ["aSDA1d", "aSDia12", "etc."];
-var r = Math.floor(Math.random() * (max));
+var r = Math.floor(Math.random() * (codes.length));
 let pic = codes[r];
 
 module.exports.run = async (bot, message, args) => {
 let channel = message.channel;
 var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
-.setAuthor("test2")
-.setImage(imgur.com/`${code}`);
+.setAuthor("test1")
+.setImage(`imgur.com/${code}.jpg`);
 
 channel.send(embedMsg);
 
