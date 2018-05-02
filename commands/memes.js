@@ -18,7 +18,7 @@ let channel = message.channel;
 var r = Math.floor(Math.random() * length);
 let embedMsg = new Discord.RichEmbed()
 .setAuthor("test1")
-.setImage(`imgur.com/${code}.jpg`);
+.setImage(`imgur.com/${pic}.jpg`);
 
 channel.send(embedMsg);
 
