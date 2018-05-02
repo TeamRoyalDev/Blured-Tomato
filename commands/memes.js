@@ -9,13 +9,13 @@ fs.readdir(memesDir, (err, files) => {
 });
 
 
+var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6", "TCg5ado"];
 
 module.exports.run = async (bot, message, args) => {
-var r = Math.floor(Math.random() * (codes.length));
+	let pic = codes[r];
+var r = Math.floor(Math.random() * (codes.length));	
 let channel = message.channel;
 var r = Math.floor(Math.random() * length);
-var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6", "TCg5ado"];
-let pic = codes[r];	
 let embedMsg = new Discord.RichEmbed()
 .setAuthor("test1")
 .setImage(`https://imgur.com/${pic}.jpg`);
