@@ -18,7 +18,7 @@ let pic = codes[r];
 let meme = memes[r];
 let channel = message.channel;
 let embedMsg = new Discord.RichEmbed()
-.setAuthor(`${meme}`)
+.setAuthor(`${meme}`, "https://www.dafk.net/what/")
 .setImage(`https://imgur.com/${pic}.jpg`);
 
 channel.send(embedMsg);
