@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#e44444")
   .setDescription("Here is my Profile if u are able to leave a Vouch. Have a good day!")
   .setDescription("https://www.mc-market.org/members/97550/")
-  .addField("༺▬▬ ❰ VOUCH ❱ ▬▬༻"");
+  .setDescription("༺▬▬ ❰ VOUCH ❱ ▬▬༻"");
 
   return message.channel.send(vouchembed);
 }
