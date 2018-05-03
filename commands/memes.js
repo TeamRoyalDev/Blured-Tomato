@@ -11,14 +11,6 @@ fs.readdir(memesDir, (err, files) => {
 });
 
 
-if(!message.content.startsWith(prefix)) return;
-if(cooldown.has(message.author.id)){
-    message.delete();
-    message.reply("Chill you are sending too many messages.")
-}
-if(!message.member.hasPermission("ADMINSTRATOR")){
-    cooldown.add(message.author.id);
-}
 	
 var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6",
 	     "9HojAvB", "zvTIc8v", "1ovSWO6", "YKMTp7c", "QVUfgYN", "OZtermd", "qOGNqwD", "uLuQYQH", "MnCLOz6", "gXPztQr", "lgkEHWg"];
@@ -28,6 +20,14 @@ var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: 
 	    , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos.", "When there are 5 peoples left in the circle"];
 
 module.exports.run = async (bot, message, args) => {
+if(message.content.startsWith(prefix)) return;
+if(cooldown.has(message.author.id)){
+    message.delete();
+    message.reply("Chill you are sending too many messages.")
+}
+if(!message.member.hasPermission("ADMINSTRATOR")){
+    cooldown.add(message.author.id);
+}	
 var r = Math.floor(Math.random() * (codes.length));	
 let pic = codes[r];	
 let meme = memes[r];
