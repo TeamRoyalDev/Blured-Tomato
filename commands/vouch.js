@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
   
-      if (message.member.hasPermission("MANAGE_SERVER")) {
+      if (message.member.hasPermission("ADMINSTRATOR")) {
         var r = Math.floor(Math.random() * (codes.length));	
         let pic = codes[r];	
         let meme = memes[r];
