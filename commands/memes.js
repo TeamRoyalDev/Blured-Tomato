@@ -2,7 +2,6 @@ const fs = require("fs");
 const memesDir = "./memes";
 const Discord = require("discord.js");
 let cooldown = new Set();
-let cdseconds = 5;
 
 var length = 0;
 
@@ -20,33 +19,43 @@ var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: 
 	    , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos.", "When there are 5 peoples left in the circle"];
 
 module.exports.run = async (bot, message, args) => {
-let prefixes = "b!"
-let prefix = prefixes[message.guild.id].prefixes;
-if(message.content.startsWith(prefix)) return;
-if(cooldown.has(message.author.id)){
-    message.delete();
-    message.reply("Chill you are sending too many messages.")
-}
-if(!message.member.hasPermission("ADMINSTRATOR")){
-    cooldown.add(message.author.id);
-}	
-var r = Math.floor(Math.random() * (codes.length));	
+    if (message.member.hasPermission("ADMINISTRATOR")) {
+        var r = Math.floor(Math.random() * (codes.length));	
+        let pic = codes[r];	
+        let meme = memes[r];
+        let channel = message.channel;
+        
+            let embedMsg = new Discord.RichEmbed()
+            .setAuthor(`${meme}`, "https://imgur.com/tg2dtMY.png")
+            .setColor(0x00AE86)
+            .setImage(`https://imgur.com/${pic}.jpg`);
+            
+            message.delete();
+            channel.send(embedMsg);
+    }
+else if(message.content.startsWith("b!memes") && (!message.member.hasPermission("ADMINISTRATOR") && (!cooldown.has(message.author.id)))) {
+    var r = Math.floor(Math.random() * (codes.length));	
 let pic = codes[r];	
 let meme = memes[r];
 let channel = message.channel;
-let embedMsg = new Discord.RichEmbed()
-.setAuthor(`${meme}`, "https://imgur.com/tg2dtMY.png")
-.setColor(0x00AE86)
-.setImage(`https://imgur.com/${pic}.jpg`);
 
-channel.send(embedMsg);
+    let embedMsg = new Discord.RichEmbed()
+    .setAuthor(`${meme}`, "https://imgur.com/tg2dtMY.png")
+    .setColor(0x00AE86)
+    .setImage(`https://imgur.com/${pic}.jpg`);
+    
+    message.delete();
+    channel.send(embedMsg);
 
-
-setTimeout(() => {
-    cooldown.delete(message.author.id)
-}, cdseconds * 1000)
+    cooldown.add(message.author.id);
+    
+    setTimeout(function() {
+        cooldown.delete(message.author.id);
+    }, 5 * 1000);
+} else {
+    message.reply("Chill you are sending too many messages.");
 }
-
+}
 
 
 module.exports.help = {
