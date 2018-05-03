@@ -60,8 +60,9 @@ bot.on("message", async message => {
   let memesCmd = prefix + "memes";
   let emojisCmd = prefix + "emojis";
   let helpCmd = prefix + "help";
+  let vouchCmd = prefix + "vouch";
 
-if(cmd === mcmCmd | cmd === setupsCmd | cmd === memesCmd | cmd === emojisCmd | cmd === helpCmd) {
+if(cmd === mcmCmd | cmd === setupsCmd | cmd === memesCmd | cmd === emojisCmd | cmd === helpCmd | cmd == vouchCmd) {
   	let cmdFile = bot.commands.get(cmd.slice(prefix.length));
         cmdFile.run(bot, message, args);
   }
