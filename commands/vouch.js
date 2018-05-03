@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    if (!message.member.hasPermission("ADMINSTRATOR")) return message.reply("No permissions to execute this command.");
-    if (message.member.hasPermission("ADMINSTRATOR")) {
+    if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.reply("No permissions to execute this command.");
+    if (message.member.hasPermission("ADMINISTRATOR")) {
         let channel = message.channel;
         
         let bicon = bot.user.displayavatarURL;
