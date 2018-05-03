@@ -19,7 +19,7 @@ var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: 
 	    , "Remember the girl from lazy town? This is her now, feel old yet?", "Gods plan", "When you peek your head out of a base and get sniped"
 	    , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos.", "When there are 5 peoples left in the circle"];
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args, prefixes) => {
 let prefix = prefixes[message.guild.id].prefixes;
 if(message.content.startsWith(prefix)) return;
 if(cooldown.has(message.author.id)){
