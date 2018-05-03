@@ -8,9 +8,12 @@ fs.readdir(memesDir, (err, files) => {
 	length = files.length;
 });
 	
-var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6", "9HojAvB", "zvTIc8v"];
+var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6",
+	     "9HojAvB", "zvTIc8v", "1ovSWO6", "YKMTp7c", "QVUfgYN", "OZtermd", "qOGNqwD", "uLuQYQH", "MnCLOz6", "gXPztQr"];
 var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: _finally eliminated my opponent with 13 health remaining_\nJohn Wick:", "Thats why i have alot of shoes in my locker.", "Back in the old days.", 
-"Epicgames staff is so nice.", "Being an idiot is now a talent", "That's why I don't have a girlfriend", "Got 999 Wood Anybody need a house ?", "Oh boy!", "Rip those boobs", "That's my luck.", "When you think its gonne be an easy kill.","When you run to the bathroom between games and hear the battle bus horn go off"];
+"Epicgames staff is so nice.", "Being an idiot is now a talent", "That's why I don't have a girlfriend", "Got 999 Wood Anybody need a house ?", "Oh boy!", "Rip those boobs", "That's my luck.", "When you think its gonne be an easy kill.","When you run to the bathroom between games and hear the battle bus horn go off"
+	    , "Remember the girl from lazy town? This is her now, feel old yet?", "Gods plan", "When you peek your head out of a base and get sniped"
+	    , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos."];
 
 module.exports.run = async (bot, message, args) => {
 var r = Math.floor(Math.random() * (codes.length));	
