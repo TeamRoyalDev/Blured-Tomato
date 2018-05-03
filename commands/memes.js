@@ -9,7 +9,7 @@ fs.readdir(memesDir, (err, files) => {
 });
 	
 var codes = ["EDsZott", "1r9Sre9", "Fm5dyoq", "yp6U7e0", "S3sEFt8","oWQgGcJ","EuzNodX","xF9gfTQ","cJC8le4","NhZVYji", "uXRjU2D", "2bK3yQ6", "TCg5ado"];
-var memes = ["Sorry Tilted gotta choose Dusty"]
+var memes = ["Sorry Tilted gotta choose Dusty"];
 
 module.exports.run = async (bot, message, args) => {
 var r = Math.floor(Math.random() * (codes.length));	
