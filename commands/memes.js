@@ -3,7 +3,7 @@ const memesDir = "./memes";
 const Discord = require("discord.js");
 let cooldown = new Set();
 let cdseconds = 5;
-let prefix = prefixes[message.guild.id].prefixes;
+let prefix = "b!";
 
 var length = 0;
 
