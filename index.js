@@ -29,7 +29,7 @@ fs.readdir("./commands/", (err, files) =>{
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} has successfully started. Made By Chelsea & Death.`);
-  bot.user.setActivity("Blured | >help", {type: "PLAYING"});
+  bot.user.setActivity(">Help | mans not hot", {type: "PLAYING"});
 
 
 });
