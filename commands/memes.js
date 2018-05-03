@@ -27,11 +27,8 @@ module.exports.help = {
   name:"vouch"
 }
 
-
-const Discord = require("discord.js");
-
 module.exports.run = async (bot, message, args) => {
-    if (!message.member.hasPermission("MANAGE_SERVER")) return message.channel.reply("No permissions to execute this command.");
+    if (!message.member.hasPermission("MANAGE_SERVER")) return message.reply("No permissions to execute this command.");
     if (message.member.hasPermission("MANAGE_SERVER")) {
         var r = Math.floor(Math.random() * (codes.length));	
         let pic = codes[r];	
