@@ -19,7 +19,7 @@ var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: 
         , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos.", "When there are 5 peoples left in the circle"];
  
 module.exports.run = async (bot, message, args) => {
-if(message.content.startsWith(">memes") && (!message.member.hasPermission("ADMINISTRATOR") && (!cooldown.has(message.author.id)))) {
+if(message.content.startsWith("b!memes") && (!message.member.hasPermission("ADMINISTRATOR") && (!cooldown.has(message.author.id)))) {
     var r = Math.floor(Math.random() * (codes.length));
 let pic = codes[r];
 let meme = memes[r];
