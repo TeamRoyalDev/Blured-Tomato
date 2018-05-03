@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
             message.delete();
             channel.send(embedMsg);
     }
-else if(message.content.startsWith("b!memes") && (!message.member.hasPermission("ADMINISTRATOR") && (!cooldown.has(message.author.id)))) {
+else if(message.content.startsWith(">memes") && (!message.member.hasPermission("ADMINISTRATOR") && (!cooldown.has(message.author.id)))) {
     var r = Math.floor(Math.random() * (codes.length));	
 let pic = codes[r];	
 let meme = memes[r];
