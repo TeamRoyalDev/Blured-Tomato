@@ -3,7 +3,6 @@ const memesDir = "./memes";
 const Discord = require("discord.js");
 let cooldown = new Set();
 let cdseconds = 5;
-let prefix = "b!";
 
 var length = 0;
 
@@ -21,6 +20,8 @@ var memes = ["Sorry Tilted gotta choose Dusty", "Season 4 Coming Clutch.", "Me: 
 	    , "Vaulted", "Tag someone who would unlock this Snapchat trophy :joy:", "These are the facts", "Fax", "When your homie dies in duos.", "When there are 5 peoples left in the circle"];
 
 module.exports.run = async (bot, message, args) => {
+let prefixes = "b!"
+let prefix = prefixes[message.guild.id].prefixes;
 if(message.content.startsWith(prefix)) return;
 if(cooldown.has(message.author.id)){
     message.delete();
