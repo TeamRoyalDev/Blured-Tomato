@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor("༺▬▬ ❰ Apply ❱ ▬▬༻")
         .setThumbnail(bicon)
         .setColor("#e44444")
-        .addDescription("https://goo.gl/forms/W7Z5ruOgjtXB4C3u1")
+        .setDescription("https://goo.gl/forms/W7Z5ruOgjtXB4C3u1")
         .setFooter("༺▬▬ ❰ Apply ❱ ▬▬༻");
       
         return message.channel.send(applyEmbed);
