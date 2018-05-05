@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("SEND_MESSAGES")) return message.channel.send("No permissions!");
   if(bUser.hasPermission("ADMINISTRATOR")) return message.channel.send("That person can't be kicked!");
   
+    message.guild.member(bUser).ban("lmao");
   message.channel.send("ez bye");
 }
 
